@@ -191,6 +191,27 @@ class ViewController: UIViewController {
     @IBAction func BUTTON5(_ sender: Any) {
            CACULATERDisplay.text = "\(2.718281828459045)"
     }
+
+    @IBAction func BUTTON6(_ sender: Any) {
+        temp = Double(caculaterDisplay.text!)!
+        var i = 1.0
+        var b = 0.00
+        var c:Int = 0
+        var s = 1.0
+        c = Int(temp)
+        b = temp - Double(c)
+        if b != 0.0{
+            caculaterDisplay.text = "不是数字"
+        }
+        else{
+            while Int(i) <= c{
+                s = s*i
+                i = i+1
+            }
+            caculaterDisplay.text = "\(s)"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CACULATERDisplay.text = "0"
