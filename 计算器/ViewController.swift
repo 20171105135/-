@@ -193,25 +193,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func BUTTON6(_ sender: Any) {
-        temp = Double(caculaterDisplay.text!)!
-        var i = 1.0
-        var b = 0.00
-        var c:Int = 0
-        var s = 1.0
-        c = Int(temp)
-        b = temp - Double(c)
-        if b != 0.0{
-            caculaterDisplay.text = "不是数字"
+       temp = Double(CACULATERDisplay.text!)!
+        var  i = 1
+        var  a = 0.00
+        var  b:Int = 0
+        var  c = 1
+        b = Int (temp)
+        a = temp - Double(b)
+        if a != 0.00{
+            CACULATERDisplay.text = "错误"
         }
         else{
-            while Int(i) <= c{
-                s = s*i
-                i = i+1
-            }
-            caculaterDisplay.text = "\(s)"
+        while i <= Int(b) {
+            c = c * i
+            i = i + 1
+             }
+            CACULATERDisplay.text = "\(c)"
         }
+            
+            
+        
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         CACULATERDisplay.text = "0"
