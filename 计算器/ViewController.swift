@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     var temp = 0.0
     var flag = 0
     var calFlag = 0
